@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 8]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+    <head>
+        <title>Make your select menu</title>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="home">
+                <h1 id="header">My select menu</h1>
+            </div>
+            <a href="#select">hello</a>
+            <select name="test_select">
+                <option value="xyz" selected>hello</option>
+                <option value="abc">holla</option>
+                <option value="zzz">Buonos diaz</option>
+            </select>
+            <label id="select_id_label" for="select_id">Test custom select</label>
+            <select class="custom-select" id="select_id" name="test_select">
+                <option value="xyz">hello</option>
+                <option value="abc">holla</option>
+                <option value="zzz">Buonos diaz</option>
+            </select>
+            <input type="text" value="test" />
+            <div id="burger-app"></div>
+        </div>
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script src="js/customSelect.js"></script>
+        <script>
+            $(function() {
+                $('.custom-select').customSelect();
+            });
+        </script>
+    </body>
+</html>

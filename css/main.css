@@ -1,0 +1,225 @@
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    color: #7C4623;
+    position: relative;
+    min-height: 100%;
+    top: 0px;
+    background-color: #7C4623;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+    background: #F5DBB2;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.btn {
+    background: #C99A68;
+    background: -webkit-linear-gradient(top,#C99A68,#A77846);
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 10px;
+    margin: 10px 0;
+    color: #fff;
+    border: 0px;
+}
+
+.hide {
+    display: none;
+}
+
+#choose-ingredient {
+    margin: 0 0 10px;
+}
+
+.item-row {
+    padding: 8px 0;
+}
+
+/* custom select css start */
+
+.lt-ie8 .custom-select {
+    display: block;
+}
+.lt-ie8 .custom_select_container {
+    display: none;
+}
+
+.custom-select {
+    display: none;
+}
+
+.custom_select_container {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    zoom: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    min-width: 100px;
+    text-align: left;
+}
+
+.custom_select_container.active {
+    -webkit-box-shadow: 0 0 1px 3px rgba(20, 200, 220, 0.7) !important;
+    box-shadow: 0 0 1px 3px rgba(20, 200, 220, 0.7) !important;
+    border-radius: 5px;
+}
+
+.custom_select_container input {
+    display: inline-block !important;
+    right: 0;
+    opacity: 0;
+    height: 10px;
+    margin: 0px;
+    bottom: 0px;
+    left: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.custom_select_container .dropdown {
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    margin-top: -1px;
+    left: -9999px;
+    z-index: 1010;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #AAA;
+    border-top: 0;
+    background: #FFF;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 240px;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    padding: 0 4px 4px 4px;
+}
+
+.expanded .dropdown {
+    left: 0;
+}
+
+.custom_select_container .dropdown li {
+    margin: 0;
+    padding: 5px 6px;
+    list-style: none;
+    line-height: 15px;
+}
+
+.custom_select_container .dropdown li:focus {
+    outline: none;
+}
+
+.custom_select_container .dropdown .highlighted {
+    background-color: #3875D7;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #3875D7), color-stop(90%, #2A62BC));
+    background-image: -webkit-linear-gradient(#3875D7 20%, #2A62BC 90%);
+    background-image: -moz-linear-gradient(#3875d7 20%, #2a62bc 90%);
+    background-image: -o-linear-gradient(#3875d7 20%, #2a62bc 90%);
+    background-image: linear-gradient(#3875D7 20%, #2A62BC 90%);
+    color: #FFF;
+}
+
+.custom_select_container .dropdown .active-result {
+    display: list-item;
+    cursor: pointer;
+}
+
+.custom_select_display {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0 0 0 8px;
+    height: 23px;
+    border: 1px solid #AAA;
+    border-radius: 5px;
+    background-color: #FFF;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #FFF), color-stop(50%, #F6F6F6), color-stop(52%, #EEE), color-stop(100%, #F4F4F4));
+    background: -webkit-linear-gradient(top, #FFF 20%, #F6F6F6 50%, #EEE 52%, #F4F4F4 100%);
+    background: -moz-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+    background: -o-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+    background: linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+    background-clip: padding-box;
+    box-shadow: 0 0 3px #FFF inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #444;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 24px;
+}
+
+.expanded .custom_select_display {
+    -moz-border-radius-bottomright: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-bottom-left-radius: 0;
+}
+
+.custom_select_display span {
+    display: block;
+    overflow: hidden;
+    margin-right: 26px;
+    padding-right: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-right: 1px solid #CCC;
+    font-weight: normal;
+}
+
+.custom_select_display div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 18px;
+    height: 100%;
+}
+
+.custom_select_display div b {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../img/chosen-sprite.png') no-repeat -4px 0px;
+}
+
+.custom_select_input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+/* custom select css end */
