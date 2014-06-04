@@ -19,6 +19,11 @@ body {
     background-color: #7C4623;
 }
 
+form {
+    text-align: left;
+    display: inline-block;
+}
+
 .container {
     width: 960px;
     margin: 0 auto;
@@ -77,6 +82,7 @@ body {
     user-select: none;
     min-width: 100px;
     text-align: left;
+    margin-top: -3px;
 }
 
 .custom_select_container.active {

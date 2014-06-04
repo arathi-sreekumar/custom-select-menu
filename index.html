@@ -13,21 +13,25 @@
             <div class="home">
                 <h1 id="header">My select menu</h1>
             </div>
-            <label for="html-select"> Html select: </label>
-            <select name="test_select" id="html-select">
-                <option value="xyz" selected>hello</option>
-                <option value="abc">holla</option>
-                <option value="zzz">Buonos diaz</option>
-            </select>
-            <label id="select_id_label" for="select_id">Test custom select</label>
-            <select class="custom-select" id="select_id" name="test_select">
-                <option value="xyz">hello</option>
-                <option value="abc">holla</option>
-                <option value="zzz">Buonos diaz</option>
-            </select>
-            <br />
-            <label for="test-input">Sample Input field</label><input id="test-input" type="text" value="test" />
-            <div id="burger-app"></div>
+            <form>
+                <label for="html-select"> Html select: </label>
+                <select name="test_select" id="html-select">
+                    <option value="xyz" selected>hello</option>
+                    <option value="abc">holla</option>
+                    <option value="zzz">Buonos diaz</option>
+                </select>
+                <br/> <br/>
+                <label id="select_id_label" for="select_id">Test custom select: </label>
+                <select class="custom-select" id="select_id" name="test_select">
+                    <option value="xyz">hello</option>
+                    <option value="abc">holla</option>
+                    <option value="zzz">Buonos diaz</option>
+                </select>
+                <br />
+                <br />
+                <label for="test-input">Sample Input field: </label><input id="test-input" type="text" value="test" />
+                <div id="burger-app"></div>
+            </form>
         </div>
         <script src="js/vendor/jquery-1.11.0.min.js"></script>
         <script src="js/customSelect.js"></script>
