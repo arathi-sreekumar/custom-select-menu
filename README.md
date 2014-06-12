@@ -1,6 +1,6 @@
 Instructions:
 
-1. copy minified/developer version of custoSelect.js to you javascript folder.
+1. copy minified/developer version of customSelect.js to you javascript folder.
 2. Copy the css code for custom select to your css file.
 3. add a class to you html select element, say custom_select and call $('.custom-select').customSelect() to create custom select.
 
